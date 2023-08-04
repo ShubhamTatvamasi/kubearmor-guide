@@ -37,3 +37,9 @@ spec:
       action: Block
 EOF
 ```
+
+Delete policy:
+```bash
+kubectl delete kubearmorpolicy nginx-webpage-block
+```
+
