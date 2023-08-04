@@ -5,6 +5,11 @@ Create nginx deployment:
 kubectl create deployment nginx --image=nginx
 ```
 
+Expose nginx:
+```bash
+kubectl expose deployment nginx --port 80 --type LoadBalancer
+```
+
 Get shell access for the pod:
 ```bash
 kubectl exec -it deploy/nginx -- bash
