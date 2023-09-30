@@ -58,3 +58,8 @@ Go to Vault data directory:
 cd /vault/data
 ```
 
+Delete minikube cluster:
+```bash
+multipass delete minikube --purge
+```
+
