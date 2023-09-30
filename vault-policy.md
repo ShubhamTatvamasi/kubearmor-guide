@@ -9,10 +9,11 @@ metadata:
   name: ksp-vault-protect
   namespace: default
 spec:
+  action: Allow
   severity: 10
   selector:
     matchLabels:
-      app.kubernetes.io/name: vault
+      app.kubernetes.io/instance: vault
       component: server
   file:
     matchDirectories:
@@ -29,6 +30,5 @@ spec:
     matchPaths:
     - path: /bin/busybox
     - path: /bin/vault
-  action: Allow
 EOF
 ```
