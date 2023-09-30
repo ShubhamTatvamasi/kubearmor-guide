@@ -32,10 +32,15 @@ kubectl get pods
 
 Port-forward vault service:
 ```bash
-kubectl port-forward service/vault 8200:8200
+kubectl port-forward --address 0.0.0.0 service/vault 8200:8200
 ```
 
-http://localhost:8200/ui/
+Get the VM IP:
+```bash
+multipass ls
+```
+
+http://192.168.64.6:8200/ui/
 
 
 Get the vault token to unlock Vault:
@@ -52,5 +57,4 @@ Go to Vault data directory:
 ```bash
 cd /vault/data
 ```
-
 
