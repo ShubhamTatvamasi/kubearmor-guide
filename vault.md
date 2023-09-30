@@ -1,8 +1,23 @@
 # Vault
 
-Start Minikube cluster: 
+Create a minikube cluster:
 ```bash
-minikube start
+multipass launch minikube
+```
+
+Get inside minikube vm:
+```bash
+multipass shell minikube
+```
+
+Install Helm
+```bash
+curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
+```
+
+Add hashicorp repo:
+```bash
+helm repo add hashicorp https://helm.releases.hashicorp.com
 ```
 
 Deploy Vault:
@@ -38,7 +53,4 @@ Go to Vault data directory:
 cd /vault/data
 ```
 
-Delete minikube cluster:
-```bash
-minikube delete
-```
+
