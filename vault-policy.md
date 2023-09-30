@@ -9,7 +9,7 @@ metadata:
   name: ksp-vault-protect
   namespace: default
 spec:
-  severity: 7
+  severity: 10
   selector:
     matchLabels:
       app.kubernetes.io/name: vault
