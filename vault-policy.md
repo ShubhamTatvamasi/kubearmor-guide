@@ -7,7 +7,7 @@ apiVersion: security.kubearmor.com/v1
 kind: KubeArmorPolicy
 metadata:
   name: ksp-vault-protect
-  namespace: default
+  namespace: vault
 spec:
   action: Allow
   severity: 10
