@@ -22,7 +22,9 @@ helm repo add hashicorp https://helm.releases.hashicorp.com
 
 Deploy Vault:
 ```bash
-helm install vault hashicorp/vault
+helm install vault hashicorp/vault \
+  --create-namespace \
+  --namespace vault
 ```
 
 Check if Vault server is ready:
