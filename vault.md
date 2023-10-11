@@ -52,7 +52,7 @@ bat vault-cluster-vault-2023-09-30T15_28_11.909Z.json
 
 Get inside Vault pod:
 ```bash
-kubectl exec -it vault-0 -- sh
+kubectl -n vault exec -it vault-0 -- sh
 ```
 
 Go to Vault data directory:
