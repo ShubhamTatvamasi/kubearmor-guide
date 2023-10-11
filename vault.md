@@ -29,12 +29,12 @@ helm install vault hashicorp/vault \
 
 Check if Vault server is ready:
 ```bash
-kubectl get pods
+kubectl -n vault get pods
 ```
 
 Port-forward vault service:
 ```bash
-kubectl port-forward --address 0.0.0.0 service/vault 8200:8200
+kubectl -n vault port-forward --address 0.0.0.0 service/vault 8200:8200
 ```
 
 Get the VM IP:
