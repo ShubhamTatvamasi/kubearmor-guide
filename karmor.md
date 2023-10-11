@@ -12,6 +12,11 @@ Install KubeArmor to cluster:
 karmor install
 ```
 
+Check if kubearmor is in the running state:
+```bash
+karmor version
+```
+
 Check kubearmor status:
 ```bash
 kubectl get po -A -l kubearmor-app
