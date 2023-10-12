@@ -41,6 +41,7 @@ EOF
 Delete Nginx:
 ```bash
 kubectl delete deployment nginx
+kubectl delete svc nginx
 ```
 
 Delete policy:
