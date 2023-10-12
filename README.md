@@ -78,6 +78,10 @@ Check and see that `nginx-webpage-block` policy has been applied:
 karmor probe
 ```
 
+Test after applying policy:
+```bash
+curl 192.168.1.220
+```
 
 Delete Nginx:
 ```bash
