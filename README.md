@@ -35,6 +35,11 @@ Get shell access for the pod:
 kubectl exec -it deploy/nginx -- bash
 ```
 
+Update the `index.html` file:
+```bash
+echo "YOU GOT HACKED!!" > /usr/share/nginx/html/index.html
+```
+
 Install nginx web policy:
 ```bash
 kubectl apply -f - << EOF
