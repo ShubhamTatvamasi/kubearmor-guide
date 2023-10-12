@@ -7,20 +7,42 @@ Download karmor:
 curl -sfL http://get.kubearmor.io/ | sudo sh -s -- -b /usr/local/bin
 ```
 
+Get the list of all the supported sub-commands:
+```bash
+karmor
+```
+
+This is tell us if KubeArmor is currently installed on our cluster or not:
+```bash
+karmor version
+```
+
 Install KubeArmor to cluster:
 ```bash
 karmor install
 ```
 
-Check if kubearmor is in the running state:
+Probe will give us detailed information our cluster and active LSM: 
 ```bash
-karmor version
+karmor probe
 ```
 
-Check kubearmor status:
+profile will give us live metrices of Process, File, Network and Syscall:
 ```bash
-kubectl get po -A -l kubearmor-app
+karmor profile -n default
 ```
+
+logs will give us realtime alerts:
+```bash
+karmor logs
+```
+
+Delete KubeArmor from cluster:
+```bash
+karmor uninstall
+```
+
+---
 
 Let's also install discovery-engine:
 ```bash
@@ -39,17 +61,4 @@ cat hashicorp-vault-k8s-1-2-1-write-under-bin-dir.yaml
 ```
 
 
-Checks for supported KubeArmor features in the current environment:
-```bash
-karmor probe
-```
-
----
-
-This will install 3 pods to our cluster:
-```
-kubearmor - 
-kubearmor-controller - 
-kubearmor-relay - 
-```
 
