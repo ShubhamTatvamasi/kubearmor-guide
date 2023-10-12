@@ -35,3 +35,9 @@ Check apt command again:
 apt update
 ```
 
+Delete KubeArmor from cluster:
+```bash
+karmor uninstall
+```
+
+
