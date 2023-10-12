@@ -40,6 +40,16 @@ Update the `index.html` file:
 echo "YOU GOT HACKED!" > /usr/share/nginx/html/index.html
 ```
 
+Test again:
+```bash
+curl 192.168.1.220
+```
+
+Reset your app:
+```bash
+kubectl delete pods -l app=nginx
+```
+
 Install nginx web policy:
 ```bash
 kubectl apply -f - << EOF
