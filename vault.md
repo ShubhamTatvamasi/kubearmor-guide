@@ -24,7 +24,8 @@ Deploy Vault:
 ```bash
 helm install vault hashicorp/vault \
   --create-namespace \
-  --namespace vault
+  --namespace vault \
+  --set ui.serviceType=LoadBalancer
 ```
 
 Check if Vault server is ready:
