@@ -38,6 +38,11 @@ spec:
 EOF
 ```
 
+Delete Nginx:
+```bash
+kubectl delete deployment nginx
+```
+
 Delete policy:
 ```bash
 kubectl delete kubearmorpolicy nginx-webpage-block
