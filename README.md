@@ -25,6 +25,11 @@ Test again:
 curl 192.168.1.220
 ```
 
+This will show us that there are no active policies live currently:
+```bash
+karmor probe
+```
+
 Get shell access for the pod:
 ```bash
 kubectl exec -it deploy/nginx -- bash
