@@ -15,6 +15,16 @@ Test connection:
 curl 192.168.1.220
 ```
 
+Check the live activities:
+```bash
+karmor profile -n default
+```
+
+Test again:
+```bash
+curl 192.168.1.220
+```
+
 Get shell access for the pod:
 ```bash
 kubectl exec -it deploy/nginx -- bash
