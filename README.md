@@ -73,6 +73,12 @@ spec:
 EOF
 ```
 
+Check and see that `nginx-webpage-block` policy has been applied:
+```bash
+karmor probe
+```
+
+
 Delete Nginx:
 ```bash
 kubectl delete deployment nginx
