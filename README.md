@@ -10,6 +10,11 @@ Expose nginx:
 kubectl expose deployment nginx --port 80 --type LoadBalancer
 ```
 
+Test connection:
+```bash
+curl 192.168.1.220
+```
+
 Get shell access for the pod:
 ```bash
 kubectl exec -it deploy/nginx -- bash
