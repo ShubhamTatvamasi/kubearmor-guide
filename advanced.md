@@ -40,4 +40,8 @@ Delete KubeArmor from cluster:
 karmor uninstall
 ```
 
+Get the summary of entire cluster:
+```bash
+karmor summary -n default
+```
 
