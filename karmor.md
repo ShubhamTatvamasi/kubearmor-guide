@@ -4,8 +4,9 @@ We will be using `karmor` cli tool for managing our KubeArmor operator
 
 Download karmor:
 ```bash
-curl -sfL http://get.kubearmor.io/ | sudo sh -s -- -b /usr/local/bin
+curl -sfL http://get.kubearmor.io/ | sudo sh -s -- -b /usr/local/bin v0.14.1
 ```
+> `v0.14.1` is the last version to support `karmor discover`
 
 Get the list of all the supported sub-commands:
 ```bash
