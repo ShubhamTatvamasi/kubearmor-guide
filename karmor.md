@@ -6,7 +6,7 @@ Download karmor:
 ```bash
 curl -sfL http://get.kubearmor.io/ | sudo sh -s -- -b /usr/local/bin v0.14.1
 ```
-> `v0.14.1` is the last version to support `karmor discover`
+> `v0.14.1` is the last version to support `karmor discover` and `karmor summary`
 
 Get the list of all the supported sub-commands:
 ```bash
